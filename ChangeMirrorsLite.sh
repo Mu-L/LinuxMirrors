@@ -1,6 +1,6 @@
 #!/bin/bash
 ## Author: SuperManito
-## Modified: 2026-06-16
+## Modified: 2026-09-08
 ## License: MIT
 ## GitHub: https://github.com/SuperManito/LinuxMirrors
 ## Website: https://linuxmirrors.cn
@@ -597,7 +597,7 @@ function collect_system_info() {
     local is_supported="true"
     case "${SYSTEM_JUDGMENT}" in
     "${SYSTEM_DEBIAN}")
-        if [[ ! "${SYSTEM_VERSION_ID_MAJOR}" =~ ^(1[0-3]|[8-9])$ ]]; then
+        if [[ ! "${SYSTEM_VERSION_ID_MAJOR}" =~ ^(1[0-4]|[8-9])$ ]]; then
             is_supported="false"
         fi
         if [[ "${SYSTEM_VERSION_CODENAME}" == "sid" ]]; then
